@@ -49,5 +49,5 @@ SHA-256 : 1373875DAA67FC191235650E28241F55C6181875F4AA3433198DDDBFDFD14467
 
 # Copyright:
 
-open source - you can modify/customize without permission but.......<b>not allowed</b> to sell for any rewards in return or <b>not allowed</b> to transfer the modified or customized one.
+open source - you can modify/customize without permission but.....🔴not allowed to sell for any rewards in return or 🔴not allowed to transfer the modified or customized one.
 
