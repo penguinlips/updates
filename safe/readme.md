@@ -1,5 +1,5 @@
 # 🟩PenguinlipsSafe 
-V 1.0<br>
+# V 1.0<br>
 Power up your online security with PenguinlipsSafe by generating and storing a random 16 digit password with numbers, digits and symbols.<br>
 https://github.com/penguinlips/updates/raw/main/safe/PenguinlipsSafeexe.zip (exe)<br>
 https://github.com/penguinlips/updates/raw/main/safe/PenguinlipsSafejar.zip (jar)
