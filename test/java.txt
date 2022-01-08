@@ -22,7 +22,7 @@ public class Test {
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException, IOException {
      
-    String i = null;
+    String j = null;
 
             while(true){
                 
@@ -43,16 +43,16 @@ public class Test {
 
                             String str = sb.toString();
                             String[] strParts = str.split( "," );
-                            i = strParts[0].toString();
+                            j = strParts[1].toString();
                         
                     }
                 }
                 
-                if( "1".equals(i)){
+                if( "1".equals(j)){
                 System.out.println("second");
                 TimeUnit.SECONDS.sleep(3);
                 }
-                if( "0".equals(i)){
+                if( "0".equals(j)){
                     break;
                 }
                 
