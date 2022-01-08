@@ -1,2 +1,2 @@
-this is a bash file
-some function will come here
+#!/bin/bash
+echo "Hello World"
