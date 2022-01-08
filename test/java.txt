@@ -5,33 +5,57 @@
  */
 package init;
 
+import java.awt.Desktop;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
 
 /**
  *
  * @author penguinlips
  */
-public class J1 {
+public class Test {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws InterruptedException, MalformedURLException, IOException {
+     
+    String i = null;
 
-        URL url = new URL("https://penguinlips.github.io/updates/test/java.txt");
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()))) {
+            while(true){
+                
+                
+                    if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+                        URL newurl = new URL("https://penguinlips.github.io/updates/test/main.txt");
+                        try (BufferedReader br = new BufferedReader(new InputStreamReader(newurl.openStream()))) {
 
-            String line;
+                            String line;
 
-            StringBuilder sb = new StringBuilder();
+                            StringBuilder sb = new StringBuilder();
 
-            while ((line = br.readLine()) != null) {
+                            while ((line = br.readLine()) != null) {
 
-                sb.append(line);
-                sb.append(System.lineSeparator());
-            }
+                                sb.append(line);
+                                sb.append(System.lineSeparator());
+                            }
 
-            System.out.println(sb);
+                            String str = sb.toString();
+                            String[] strParts = str.split( "," );
+                            i = strParts[0].toString();
+                        
+                    }
+                }
+                
+                if( "1".equals(i)){
+                System.out.println("second");
+                TimeUnit.SECONDS.sleep(3);
+                }
+                if( "0".equals(i)){
+                    break;
+                }
+                
+        }
         }
     }
-}
