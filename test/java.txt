@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
  *
  * @author penguinlips
  */
-public class Test {
+public class init {
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException, IOException {
      
