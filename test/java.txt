@@ -48,10 +48,10 @@ public class J1 {
                     }
                 }
                 
-                if( "1".equals(j)){
+                if( "1".equals(i)){
                 System.out.println("second");
                 TimeUnit.SECONDS.sleep(3);
-                }else if( "0".equals(j)){
+                }else if( "0".equals(i)){
                     break;
                 }
                 
