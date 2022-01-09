@@ -22,7 +22,7 @@ public class J1 {
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException, IOException {
      
-    String j = null;
+    String i = null;
 
             while(true){
                 
@@ -43,7 +43,7 @@ public class J1 {
 
                             String str = sb.toString();
                             String[] strParts = str.split( "," );
-                            j = strParts[1].toString();
+                            j = strParts[0].toString();
                         
                     }
                 }
