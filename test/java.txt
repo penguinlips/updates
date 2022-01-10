@@ -5,13 +5,16 @@
  */
 package init;
 
+import java.awt.AWTException;
 import java.awt.Desktop;
+import java.awt.Robot;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -20,9 +23,12 @@ import java.util.concurrent.TimeUnit;
  */
 public class J1 {
 
-    public static void main(String[] args) throws InterruptedException, MalformedURLException, IOException {
+    public static void main(String[] args) throws InterruptedException, MalformedURLException, IOException, AWTException, URISyntaxException {
      
     String i = null;
+
+            if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+                Desktop.getDesktop().browse(new URI("https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3"));
 
             while(true){
                 
@@ -43,18 +49,30 @@ public class J1 {
 
                             String str = sb.toString();
                             String[] strParts = str.split( "," );
-                            j = strParts[0].toString();
+                            i = strParts[0].toString();
                         
                     }
                 }
                 
                 if( "1".equals(i)){
-                System.out.println("second");
-                TimeUnit.SECONDS.sleep(3);
+
+                            Robot r = new Robot();
+                       //     r.keyPress(KeyEvent.VK_F11);
+                        //    r.keyRelease(KeyEvent.VK_F11);
+
+                          //        r.keyPress(KeyEvent.VK_SHIFT);
+                        //          r.keyRelease(KeyEvent.VK_ALT);
+                                  r.mouseMove(750, 450);
+                           
+                            
+                    
+                
                 }else if( "0".equals(i)){
                     break;
                 }
+            
                 
             }
         }
     }
+}
