@@ -82,7 +82,7 @@ public class J1 {
             r.keyRelease(KeyEvent.VK_SHIFT);
             r.keyPress(KeyEvent.VK_ALT);
             r.keyRelease(KeyEvent.VK_ALT);
-            r.mouseMove(750, 400);
+           // r.mouseMove(750, 400);
             r.keyPress(KeyEvent.VK_TAB);
             r.keyRelease(KeyEvent.VK_TAB);
 
