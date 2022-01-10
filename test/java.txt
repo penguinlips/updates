@@ -35,6 +35,8 @@ public class J1 {
         TimeUnit.SECONDS.sleep(2);
         r.keyPress(KeyEvent.VK_F11);
         r.keyRelease(KeyEvent.VK_F11);
+        r.keyPress(KeyEvent.VK_M);
+        r.keyRelease(KeyEvent.VK_M);
 
     while(true){
                 
@@ -66,7 +68,8 @@ public class J1 {
 
             r.keyPress(KeyEvent.VK_SHIFT);
             r.keyRelease(KeyEvent.VK_ALT);
-            r.mouseMove(750, 450);
+            r.mouseMove(750, 550);
+            r.keyPress(KeyEvent.VK_TAB);
 
         }else if( "0".equals(i)){
             r.keyPress(KeyEvent.VK_CONTROL);
