@@ -40,7 +40,6 @@ public class J1 {
     r.keyRelease(KeyEvent.VK_TAB);
     r.keyPress(KeyEvent.VK_ENTER);
     r.keyRelease(KeyEvent.VK_ENTER);
-    System.out.println("done");
    }
     
     if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
