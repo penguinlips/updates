@@ -72,6 +72,7 @@ public class J1 {
             r.keyRelease(KeyEvent.VK_ALT);
             r.mouseMove(750, 400);
             r.keyPress(KeyEvent.VK_TAB);
+            r.keyRelease(KeyEvent.VK_TAB);
 
         }else if( "0".equals(i)){
             r.keyPress(KeyEvent.VK_CONTROL);
