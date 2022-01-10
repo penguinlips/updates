@@ -30,7 +30,7 @@ public class J1 {
     String i = null;
     Robot r = new Robot();
     
-    
+   for(int j=1;j<=5;j++){
     r.keyPress(KeyEvent.VK_CONTROL);
     r.keyPress(KeyEvent.VK_W);
     r.keyRelease(KeyEvent.VK_W);
@@ -40,10 +40,12 @@ public class J1 {
     r.keyRelease(KeyEvent.VK_TAB);
     r.keyPress(KeyEvent.VK_ENTER);
     r.keyRelease(KeyEvent.VK_ENTER);
+    System.out.println("done");
+   }
     
     if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
         Desktop.getDesktop().browse(new URI("https://unimengini.github.io/test/test.html"));
-        TimeUnit.SECONDS.sleep(2);
+        TimeUnit.SECONDS.sleep(3);
         r.keyPress(KeyEvent.VK_F11);
         r.keyRelease(KeyEvent.VK_F11);
         TimeUnit.SECONDS.sleep(1);
