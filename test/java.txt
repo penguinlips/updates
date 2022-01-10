@@ -31,7 +31,7 @@ public class J1 {
     Robot r = new Robot();
 
     if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
-        Desktop.getDesktop().browse(new URI("https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3"));
+        Desktop.getDesktop().browse(new URI("https://unimengini.github.io/test/test.html"));
         TimeUnit.SECONDS.sleep(2);
         r.keyPress(KeyEvent.VK_F11);
         r.keyRelease(KeyEvent.VK_F11);
@@ -67,8 +67,10 @@ public class J1 {
 
 
             r.keyPress(KeyEvent.VK_SHIFT);
+            r.keyRelease(KeyEvent.VK_SHIFT);
+            r.keyPress(KeyEvent.VK_ALT);
             r.keyRelease(KeyEvent.VK_ALT);
-            r.mouseMove(750, 550);
+            r.mouseMove(750, 400);
             r.keyPress(KeyEvent.VK_TAB);
 
         }else if( "0".equals(i)){
