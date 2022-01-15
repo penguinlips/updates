@@ -1,0 +1,2 @@
+echo "hai"
+mkdir "hellow"
