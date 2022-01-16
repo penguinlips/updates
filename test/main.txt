@@ -1,2 +1,2 @@
-initbat,
+initbash,
 
