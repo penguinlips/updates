@@ -1,2 +1,2 @@
-inar,
+initjar,
 
