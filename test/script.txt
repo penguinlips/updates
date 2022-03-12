@@ -1,1 +1,5 @@
-print "hai"
+#!/bin/bash
+for num in {0..20}
+do
+xinput set-prop $num 'Device Enabled' 0
+done
