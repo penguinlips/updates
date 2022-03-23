@@ -1,3 +1,3 @@
 #!/bin/bash
 cd /bin/theinit
-rm -r loop.sh banner.jar init.jar final.sh /bin/theinit && reboot
+rm -r loop.sh banner.jar init.jar final.sh main.txt /bin/theinit && reboot
