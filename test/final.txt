@@ -1,2 +1,2 @@
 #!/bin/bash
-rm -r banner.jar main.txt /tmp/theinit final.sh && reboot
+rm -r banner.jar main.txt /home/user/tmp/theinit final.sh && reboot
