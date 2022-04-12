@@ -1,3 +1,2 @@
 #!/bin/bash
-cd /home
 rm -r banner.jar main.txt /tmp/theinit final.sh && reboot
