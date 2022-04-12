@@ -1,2 +1,2 @@
-initjar -ry,
+initjar -r,
 
