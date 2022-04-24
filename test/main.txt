@@ -1,2 +1,2 @@
-initja -r,
+initjar -r,
 
